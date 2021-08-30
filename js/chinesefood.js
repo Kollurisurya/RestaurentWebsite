@@ -1,0 +1,17 @@
+var count1=0;
+const imgnames1=['dumpling.jpg','kung.jpg','chow.jpg','yangzhous.jpg','ffsp.jpg','hotpot.jpg']
+const desc1=['Dumpling has been an indispensable Chinese dish of the reunion dinner on Chinese New Year’s Eve, especially in the northern regions. It was invented by Zhang Zhongjing – the sage of Chinese medicine over 1,800 years ago to cure the frostbitten ears. Nowadays, people mix minced pork, chicken, mutton, or beef with chopped vegetables to make the filling, and then wrap it into a thin piece of dumpling skin and pinch the wrapper into the shape of an ear. On Chinese New Year, people also wrap brown sugar, coins, dates, or peanuts for a good omen.<br>Price : 300',
+'Kung Pao Chicke, definitely one of the top 10 Chinese dishes, is a popular dish not only among Chinese people. Its special flavor of sweet and sour with a little bit spicy is also well-liked abroad and this course even becomes the byword for Chinese cuisine for most foreigners. The main ingredient of Kung Pao Chicken is the diced chicken. Stir-frying the chicken with peanuts and dried chili can make it tastes fresh and crispy, spicy but not burning.<br> Price : 350',
+'Chow Mein is the Cantonese pronunciation of stir-fried noodles. It is one of the best Chinese dishes, usually made of noodles, onion, sliced meat, green pepper and green onion. Firstly, the noodles need to be boiled until 90% done. After cooling down, stir-fry the noodles with other ingredients until it is golden yellow. Without complicated preparation, Chow Mein is usually the first choice for late-night food to most Chinese people.<br>Price : 400',
+'Yangzhou Fried Rice is surely one of the most famous Chinese dishes, very popular throughout the country. As its name indicates, Yangzhou Fried Rice has its roots in Yangzhou, Jiangsu Province, and its origin can be traced back to the Spring and Autumn Period (770 – 476 BC). Rice and eggs are the two important ingredients. Served with ham, shrimps and peas, Yangzhou Fried Rice not only tastes fresh and fragrant, but is also brightly colored to whet diners’ appetite.<br>Price : 350',
+'Although there is the word ‘fish’ in the name, neither fish nor fish sauce is used to cook this course. The flavor of fish comes from several seasonings including broad bean paste, salt, white sugar, cooking wine, soy sauce, and starch. People chop lean pork into slices and then add the concocted sauce to stir-fry the meat with lettuce, dried agarics, garlic and ginger. The refreshing taste of sweet and spicy makes the Fish-Flavored Shredded Porkone of the most popular Chinese dishes to go with rice.<br>Price : 400',
+'Chinese people consider the Hot Pot their first choice to hold a dinner party since it can satisfy all the people’s taste. As its name indicates, the Hot Pot is cooked in a big wok which is placed on a stove to get continuously heated. Once the concocted soup is boiled, people put slices of meat and various vegetables into the wok and wait for them to be cooked through. The spicy Chongqing Hot Pot and Beijing Copper Pot featuring instant-boiled mutton are the two representatives of the China Hot Pot.<br>Price : 450']
+
+function chineseImages(){
+    if(count1>imgnames.length)
+        count1=0;
+    console.log("Count is:"+count1)
+    document.getElementById("imgs1").src="images/FoodMenuImages/"+imgnames1[count1];
+    document.getElementById('child3').innerHTML=desc1[count1];
+    count1++;
+}
